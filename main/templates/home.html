@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div x-data="{ message: 'Hello, Alpine!' }">
+    <h1 x-text="message"></h1>
+    <button hx-get="/" hx-trigger="click" hx-swap="outerHTML">Click me</button>
+</div>
+{% endblock %}
