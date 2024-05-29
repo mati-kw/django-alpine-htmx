@@ -5,4 +5,10 @@
     <h1 x-text="message"></h1>
     <button hx-get="/" hx-trigger="click" hx-swap="outerHTML">Click me</button>
 </div>
+<div x-data="{ open: false }">
+    <button @click="open = !open">Toggle</button>
+    <div x-show="open">
+        <p>This is toggled content.</p>
+    </div>
+</div>
 {% endblock %}

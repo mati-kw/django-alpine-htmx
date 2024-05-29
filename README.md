@@ -18,48 +18,62 @@ git clone https://github.com/mati-kw/django-alpine-htmx.git
 cd django-alpine-htmx
 ```
 
-2. Set Up the Virtual Environment
+### 2. Set Up the Virtual Environment
 Make sure you have pipenv installed. If not, you can install it using pip:
 
 
 ``` bash
 pip install pipenv
 ```
-3. Install Dependencies
+### 3. Install Dependencies
 Use pipenv to install all required dependencies:
 
 ```bash
 pipenv install
 ```
 
-4. Activate the Virtual Environment
+### 4. Activate the Virtual Environment
 Activate the virtual environment created by pipenv:
 
 ```bash
 pipenv shell
 ```
-5. Set Up the Database
+### 5. Set Up the Database
 Apply the migrations to set up the database:
 
 ```bash
 python manage.py migrate
 ```
 
-6. Create a Superuser
+### 6. Create a Superuser
 Create a superuser to access the Django admin:
 
 ```bash
 python manage.py createsuperuser
 ```
-7. Run the Development Server
+
+### 7. Install Node.js Dependencies
+Make sure you have Node.js and npm installed. Install Tailwind CSS and its dependencies:
+
+```bash
+npm install
+```
+### 8. Build the Tailwind CSS
+Run the build command to generate the compiled CSS:
+
+```bash
+npm run build:css
+```
+
+### 9. Run the Development Server
 Start the development server:
 
 ```bash
 python manage.py runserver
 ```
-Open your browser and navigate to http://127.0.0.1:8000/ to see the application in action.
+### Open your browser and navigate to http://127.0.0.1:8000/ to see the application in action.
 
-Static Files
+## Static Files
 Static files (HTMX and Alpine.js) are included in the main/static/js/ directory and are loaded in the base template.
 
 Project Structure

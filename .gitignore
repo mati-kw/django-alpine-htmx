@@ -17,6 +17,12 @@ ENV/
 env.bak/
 venv.bak/
 
+# Node.js
+node_modules/
+
+# Tailwind CSS output
+main/static/css/output.css
+
 # Pipenv
 Pipfile.lock
 

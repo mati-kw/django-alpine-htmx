@@ -1,0 +1,26 @@
+{
+  "name": "django-alpine-htmx-project",
+  "version": "1.0.0",
+  "description": "This is a Django project configured to use Alpine.js and HTMX. Follow the steps below to clone the repository, set up the virtual environment, install dependencies, and run the application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./main/static/css/tailwind.css -o ./main/static/css/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mati-kw/django-alpine-htmx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mati-kw/django-alpine-htmx/issues"
+  },
+  "homepage": "https://github.com/mati-kw/django-alpine-htmx#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
